@@ -8,21 +8,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Push footer down */
     min-height: 100vh;
 }
 
-/* Container Styling */
+/* Main content should expand to push the footer down */
 .container {
+    flex: 1; /* Allows content to grow and push footer down */
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    width: 90%; /* Use percentage for responsiveness */
-    max-width: 350px; /* Set a max width */
+    width: 90%;
+    max-width: 350px;
     padding: 30px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* Fix the footer so it never overlaps */
+.footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    margin-top: auto; /* Ensures it's at the bottom */
+}
+
 
 /* Headings Styling */
 h1 {
@@ -118,17 +131,6 @@ h3 {
     background-color: #d32f2f;
 }
 
-/* Footer Styling */
-.footer {
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-}
 
 /* Error Message Styling */
 .error-message {
