@@ -8,13 +8,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Push footer down */
+    justify-content: space-between;
     min-height: 100vh;
 }
 
-/* Main content should expand to push the footer down */
+
 .container {
-    flex: 1; /* Allows content to grow and push footer down */
+    flex: 1; 
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     width: 90%;
@@ -25,7 +25,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Fix the footer so it never overlaps */
+
 .footer {
     color: white;
     padding: 10px;
@@ -33,7 +33,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     font-size: 0.9rem;
-    margin-top: auto; /* Ensures it's at the bottom */
+    margin-top: auto; 
 }
 
 
@@ -142,15 +142,15 @@ h3 {
 /* Responsive Design */
 @media (max-width: 600px) {
     .container {
-        width: 90%; /* Responsive width */
-        padding: 20px; /* Adjust padding for small screens */
+        width: 90%; 
+        padding: 20px;
     }
 
     .info {
-        flex-direction: column; /* Stack vertically */
+        flex-direction: column;
     }
 
     .info div {
-        margin-bottom: 10px; /* Space between items */
+        margin-bottom: 10px;
     }
 }
